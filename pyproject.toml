@@ -16,7 +16,10 @@ readme = "README.md"
 requires-python = ">=3.8" # DashAI software needs python 3.8 or higher
 
 [project.entry-points.'dashai.plugins']
-plugin_name = 'dashai_plugin_template.plugin_class:PluginClass'
+task_name = 'dashai_plugin_template.task_class_template:ExampleTaskClass'
+model_name = 'dashai_plugin_template.model_class_template:ExampleModelClass'
+dataloader_name = 'dashai_plugin_template.dataloader_class_template:ExampleDataLoaderClass'
+metric_name = 'dashai_plugin_template.metric_class_template:ExampleMetricClass'
 # Add all the necessary entrypoint (one per DashAI component)
 
 [build-system]
